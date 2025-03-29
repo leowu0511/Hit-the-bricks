@@ -11,7 +11,7 @@ pygame.mixer.init()  # 初始化音效
 # 設定遊戲窗口
 WIDTH, HEIGHT = 800, 350
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("消磚塊遊戲")
+pygame.display.set_caption("打爆磚頭!")
 
 # 顏色設置
 WHITE = (255, 255, 255)
@@ -95,7 +95,7 @@ def handle_ball_collision_with_brick(ball, bricks, score, balls):
                 balls.append(new_ball1)
                 balls.append(new_ball2)
 
-            score += 1  # 每消除一個磚塊得10分
+            score += 1  # 每消除一個磚塊得1分
     
     return score
 
